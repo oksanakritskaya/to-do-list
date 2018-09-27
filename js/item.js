@@ -17,7 +17,8 @@ var itemModule = function() {
         if(e.path[0].classList.contains('item__delete')) {
             eventBus.publish(Events.DELETE_ITEM, e.target.parentElement.dataset.id);
         } else {
-            console.log(e.path[0]);
+            //здесь могла бы быть смена статуса по клику
+            let div = e.target.parentElement;
         }
     });
 }();
